@@ -11,4 +11,17 @@ public class FinRa {
      */
 
     // Solution below
+
+    public static void finra() {
+        for (int i = 0; i < 30; i++) {
+            System.out.println(i);
+            if (i % 15 == 0){
+                System.out.println(i + " is Finra");
+            }else if (i % 3 == 0){
+                System.out.println(i +" is Fin");
+            }else if (i % 5 == 0){
+                System.out.println(i + " is Ra");
+            }
+        }
+    }
 }
