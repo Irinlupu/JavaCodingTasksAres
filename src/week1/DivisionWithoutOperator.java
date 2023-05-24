@@ -11,6 +11,7 @@ public class DivisionWithoutOperator {
     public int dividWithoutOeration(int number1 ,int number2){
 
         int resualt = 0;
+
         //sign variable is for converting numbers
         int sign = 1;
         if (number1 * number2 < 0 ) {
