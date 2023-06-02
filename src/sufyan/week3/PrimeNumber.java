@@ -1,8 +1,11 @@
 package sufyan.week3;
 
+import java.util.Scanner;
+
 class PrimeNumber{
-    public static void main(String[] args) {
-        int num = 906;
+
+    public static boolean prime(int num){
+
         //prime numbers
         int[] primeNumber = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97};
         boolean bool = true;
@@ -23,7 +26,17 @@ class PrimeNumber{
                 }
             }
         }
-        System.out.println(bool);
+        return bool;
+
+
+    }
+    public static void main(String[] args) {
+
+        Scanner in = new Scanner(System.in);
+        System.out.println("Please give a number to check it if it's Prime");
+        int num = in.nextInt();
+        System.out.println(prime(num));
+        in.close();
 
 
     }
