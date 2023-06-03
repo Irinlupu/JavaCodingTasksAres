@@ -1,5 +1,9 @@
 package week2;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class DivisibleBy3_5_15 {
 
     /*
@@ -15,4 +19,70 @@ Output: Divisible By 15 15 30 45 60 75 90
                Divisible By 3 3 6 9 12 18 21 24 27 33 36 39 42 48 51 54 57 63 66 69 72 78 81 84 87 93 96 99
 
  */
+
+    public static void main(String[] args) {
+
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Please enter a number");
+        int num = input.nextInt();
+
+        ArrayList<Integer> divisibel15 = new ArrayList<>();
+        ArrayList<Integer> divisibel3 = new ArrayList<>();
+        ArrayList<Integer> divisibel5 = new ArrayList<>();
+
+
+
+        for (int i = 1; i <= num; i++) {
+            if (i % 3 == 0 && i % 5 == 0){
+               divisibel15.add(i);
+            }if (i % 3 == 0 && i % 5 != 0){
+                divisibel3.add(i);
+            }if (i % 5 == 0 && i % 3 != 0){
+                divisibel5.add(i);
+            }
+        }
+        System.out.println("DivisibelBy15 numbers are : " + divisibel15);
+        System.out.println("DivisibelBy3 numbers are : " +divisibel3);
+        System.out.println("DivisibelBy5 numbers are : " +divisibel5);
+
+        input.close();
+
+
+        /*
+
+        for (int i = 1; i <= num; i++) {
+
+            if ( num <= 0) {
+                System.err.println("Invalid Number entered " + num);
+
+                if (i % 2 == 0 && i % 3 == 0 && i % 5 == 0) {
+                    codilityTestCoders.add(i);
+                }
+                if (i % 2 == 0 && i % 3 == 0 || i % 2 ==0 && i % 5 == 0 || i % 3 ==0 && i % 5 == 0) {
+                    codilityTest.add(i);
+                }
+                if (i % 2 == 0 || i % 3 == 0 || i % 5 ==0 ) {
+                    codility.add(i);
+                }
+            }
+        }
+
+
+        System.out.println("CodilityTestCoders numbers are : " + codilityTestCoders);
+         System.out.println("CodilityTest numbers are : " +codilityTest);
+         System.out.println("Codility numbers are : " +codility);
+
+
+         input.close();
+         */
+
+    }
+
 }
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 package week2;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class ConsecutiveNumbers {
 
     /*
@@ -14,6 +17,51 @@ Numbers divisible by both 2 and 3 should be replaced by CodilityTest and numbers
  2,3 and 5, should be replaced by CodilityTestCoders.
  */
 
+    public static void main(String[] args) {
 
 
+        Scanner input = new Scanner(System.in);
+        System.out.println("Please enter a number");
+        int num = input.nextInt();
+
+        ArrayList<Integer> codilityTestCoders = new ArrayList<>();
+        ArrayList<Integer> codilityTest = new ArrayList<>();
+        ArrayList<Integer> codility = new ArrayList<>();
+
+        if (num <= 0){
+            System.err.println("Invalid Entered");
+            System.exit(0);
+        }
+
+        for (int i = 1; i <= num; i++) {
+
+
+                if (i % 2 == 0 && i % 3 == 0 && i % 5 == 0) {
+                    codilityTestCoders.add(i);
+                }else if (i % 2 == 0 && i % 3 == 0 || i % 2 ==0 && i % 5 == 0 || i % 3 ==0 && i % 5 == 0) {
+                    codilityTest.add(i);
+                }else if (i % 2 == 0 || i % 3 == 0 || i % 5 ==0 ) {
+                    codility.add(i);
+                }
+        }
+
+        System.out.println("CodilityTestCoders numbers are : " + codilityTestCoders);
+        System.out.println("CodilityTest numbers are : " +codilityTest);
+        System.out.println("Codility numbers are : " +codility);
+
+
+        input.close();
+
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
