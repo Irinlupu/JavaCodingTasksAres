@@ -24,8 +24,10 @@ public class ReverseNegativeNumber {
         System.out.println("Enter your number:");
         int num = input.nextInt();
 
-        if (num >= 0){
+        while (num >= 0){
             System.err.println("Invalid number");
+            System.out.println("Try again:");
+            num = input.nextInt();
         }
 
         input.close();
