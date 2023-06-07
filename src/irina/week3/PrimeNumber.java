@@ -6,7 +6,7 @@ public class PrimeNumber {
         Write a method that can check if a number is prime or not.
      */
     public static void main(String[] args) {
-        isPrime(28);
+        isPrime(1);
     }
 
     public static void isPrime(int num){
@@ -24,4 +24,5 @@ public class PrimeNumber {
 
 
     }
+
 }
