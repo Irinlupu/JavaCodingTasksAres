@@ -8,7 +8,7 @@ public class ReverseNegativeNumber {
 
      */
     public static void main(String[] args) {
-       int x =  reverseNegative(-58);
+       int x =  reverseNegative(255);
         System.out.println("x = " + x);
 
     }
@@ -18,8 +18,8 @@ public class ReverseNegativeNumber {
 
         while(num != 0){
 
-            int digit = num % 10;
-            reversed = reversed * 10 + digit;
+            int digit = num % 10; // remainder of 5 // remainder 4
+            reversed = reversed * 10 + digit; // 50 + 4 = 54
 
             num /= 10;
         }
