@@ -1,5 +1,7 @@
 package HuyL.week3;
 
+import java.util.Scanner;
+
 public class PrimeNumber {
 
     public static boolean isPrimeNumber(int num){
@@ -12,11 +14,22 @@ public class PrimeNumber {
                 }
             }
         }
+
         return true; // returns true
     }
 
     public static void main(String[] args) {
-        System.out.println(isPrimeNumber(11));
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter a number: ");
+        int number = input.nextInt();
+
+        if (isPrimeNumber(number)){
+            System.out.println(number+" is a Prime number");
+        }else {
+            System.out.println(number+" is not Prime number");
+        }
     }
 
 }
