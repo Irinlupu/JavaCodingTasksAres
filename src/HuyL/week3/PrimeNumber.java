@@ -15,5 +15,9 @@ public class PrimeNumber {
         return true; // returns true
     }
 
+    public static void main(String[] args) {
+        System.out.println(isPrimeNumber(11));
+    }
+
 }
 //Write a method that can check if a number is prime or not.

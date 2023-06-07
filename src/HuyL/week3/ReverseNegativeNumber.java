@@ -19,6 +19,11 @@ public class ReverseNegativeNumber {
         }
         return reverse; // returns reverse version number that number we are given
     }
+
+    public static void main(String[] args) {
+
+        System.out.println(reverseNegativeNum(-35));
+    }
 }
 //Write a return method that can reverse digits of a negative number and return it as int
 //input: -35  output: -53
