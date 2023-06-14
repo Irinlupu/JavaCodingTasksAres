@@ -25,11 +25,11 @@ public class SameLetters {
         str1= str1.replace(" ","").trim();
         str2 = str2.replace(" ","").trim();
 
-        List<String> list1 = new ArrayList<>(Arrays.asList(str1.split("")));
-        TreeSet<String> sortedList1 = new TreeSet<>(list1);
+     // List<String> list1 = new ArrayList<>(Arrays.asList(str1.split("")));
+        TreeSet<String> sortedList1 = new TreeSet<>(Arrays.asList(str1.split("")));
 
-        List<String> list2 = new ArrayList<>(Arrays.asList(str2.split("")));
-        TreeSet<String> sortedList2 = new TreeSet<>(list2);
+      //  List<String> list2 = new ArrayList<>(Arrays.asList(str2.split("")));
+        TreeSet<String> sortedList2 = new TreeSet<>(Arrays.asList(str2.split("")));
 
         String sortedStr1 = String.join("",sortedList1);
         String sortedStr2 = String.join("",sortedList2);
