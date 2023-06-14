@@ -20,7 +20,7 @@ public class SameLetters {
 
     public static boolean sameLetters(String str1, String str2) {
 
-        char[] ch1 = str1.toCharArray(); //I assign str1 with toCharArray() method to variable ch1
+        char[] ch1 = str1.toCharArray(); //I assign str1 with toCharArray() method and to variable ch1
         char[] ch2 = str2.toCharArray(); //I assign str2 with toCharArray() method to variable ch2
         Arrays.sort(ch1); // use sort method to sort order
         Arrays.sort(ch2); // use sort method to sort order
