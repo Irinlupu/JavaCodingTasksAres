@@ -18,15 +18,44 @@ public class SameLetters {
 
     public static void main(String[] args) {
 
-        String str1 = "abbc";
-        String str2 = "bbca";
+        String str1 = "abca";
+        String str2 = "caab";
 
-        System.out.println(sameLetters(str1, str2));
+        System.out.println("sameLetters2(str1, str2) = " + sameLetters2(str1, str2));
+
+        //System.out.println(sameLetters(str1, str2));
 
 
     }
 
-    public static boolean sameLetters(String str1, String str2) {
+    public static boolean sameLetters2(String str1, String str2) {
+        boolean sameLetters = true;
+
+        if (str1.length() == str2.length()) {
+
+            for (int i = 0; i < str1.length(); i++) {
+
+
+                for (int j = 0; j < str2.length(); j++) {
+                    char each = str2.charAt(j);
+
+                    if (!str1.contains(each + "" )) {
+                        sameLetters = false;
+                    }
+
+
+                }
+
+            }
+
+
+        }
+
+        return sameLetters;
+
+    }
+
+    /*public static boolean sameLetters(String str1, String str2) {
 
 
 
@@ -46,6 +75,6 @@ public class SameLetters {
         return (str1.equals(str2));
 
 
-    }
+    }*/
 
 }
