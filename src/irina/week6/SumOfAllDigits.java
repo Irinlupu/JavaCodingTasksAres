@@ -22,7 +22,9 @@ public class SumOfAllDigits {
         // initializing the sum variable that will be returned by the method at the end
         int sum = 0;
         // converting the string into a char array and adding it to an ArrayList<String> type.
-        ArrayList<String> list = new ArrayList<>(List.of(str.split(" ")));
+        //ArrayList<String> list = new ArrayList<>(List.of(str.split(" ")));
+        // we can instead split the String into an array os String
+        String [] list = str.split(" ");
         // initializing a new String that will only contain the numbers from our string
         String onlyNumbersString = "";
 
