@@ -61,4 +61,32 @@ public class SumOfAllDigits {
         return sum;
 
     }
+
+
+    /*
+    Soufiane Solution!
+
+    List<String> listofstr = Arrays.asList(str.split(" "));
+        List<Integer> num = new ArrayList<>();
+        int sumOfnum = 0;
+        System.out.println("listofstr = " + listofstr);
+        for ( String each : listofstr ) {
+            try {
+                num.add(Integer.valueOf(each));
+            }catch (Exception e){
+
+            }
+
+
+        }
+        System.out.println("num = " + num.toString());
+        for (Integer eachInt : num ) {
+            sumOfnum += eachInt;
+
+        }
+        System.out.println("sumOfnum = " + sumOfnum);
+
+
+    }
+     */
 }
