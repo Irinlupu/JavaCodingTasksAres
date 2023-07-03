@@ -4,7 +4,7 @@ public class ConsecutiveNumbers {
 
     public static void main(String[] args) {
 
-        consecutiveNumbers(20);
+        consecutiveNumbers(30);
     }
 
     public static void consecutiveNumbers(int num){

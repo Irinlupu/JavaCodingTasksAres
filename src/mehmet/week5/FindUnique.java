@@ -3,7 +3,7 @@ package mehmet.week5;
 public class FindUnique {
 
     public static void main(String[] args) {
-        System.out.println(uniqueChar("ASSDARTT"));
+        System.out.println(uniqueChar("XXXCCCDDDSDG"));
     }
 
     //String - Find the unique

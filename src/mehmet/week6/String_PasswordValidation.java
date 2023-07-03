@@ -50,7 +50,11 @@ public class String_PasswordValidation {
             }
         }
 
-        return atLeast6Character && oneDigit && oneLowerCase && oneUpperCase && oneSpecialCharacter;
+        return atLeast6Character
+                && oneDigit
+                && oneLowerCase
+                && oneUpperCase
+                && oneSpecialCharacter;
 
     }
 }
