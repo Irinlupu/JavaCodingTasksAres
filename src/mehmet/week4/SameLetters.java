@@ -3,7 +3,7 @@ package mehmet.week4;
 public class SameLetters {
 
     public static void main(String[] args) {
-        System.out.println(sameLetters("abcdfg","bcdfga"));
+        System.out.println(sameLetters("aabcdfg","bcdfgda"));
     }
 
     public static boolean sameLetters(String str1, String str2){
