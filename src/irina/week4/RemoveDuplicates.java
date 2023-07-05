@@ -10,7 +10,8 @@ public class RemoveDuplicates {
      */
     public static void main(String[] args) {
 
-        String str = "11225586544445555AABBBCDDD";
+        String str = "11225586544445555AABBBCDDDAAAA";
+
 
         System.out.println(removeDuplicates(str));
 
@@ -21,7 +22,7 @@ public class RemoveDuplicates {
 
         for (int i = 0; i < str.length(); i++) {
             if(!newString.contains(str.substring(i, i+1))){
-                newString+= str.substring(i,i+1);
+                newString+= str.substring(i, i+1);
             }
 
         }

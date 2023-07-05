@@ -4,7 +4,7 @@ public class RemoveDuplicates {
 
     public static void main(String[] args) {
 
-        System.out.println(removeDuplicates("AAABBBBCCCD"));
+        System.out.println(removeDuplicates("AAABBBBCCCD45645646444466666667777"));
 
     }
 
