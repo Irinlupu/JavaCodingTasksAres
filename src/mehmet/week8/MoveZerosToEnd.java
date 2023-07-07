@@ -1,7 +1,6 @@
 package mehmet.week8;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class MoveZerosToEnd {
 
@@ -13,23 +12,23 @@ public class MoveZerosToEnd {
     //output: [1, 2, 3, 4, 0, 0, 0, 0]
 
     public static void main(String[] args) {
-        int[] arr = {1,0,2,0,3,0,4,0};
+        int[] arr = {1, 0, 2, 0, 3, 0, 4, 0};
         System.out.println("moveZerosToEnd(arr) = " + moveZerosToEnd(arr));
     }
 
 
-    public static ArrayList<Integer> moveZerosToEnd(int[] arr){
+    public static ArrayList<Integer> moveZerosToEnd(int[] arr) {
 
         ArrayList<Integer> newArray = new ArrayList<>();
 
         for (int i : arr) {
-            if (i != 0){
+            if (i != 0) {
                 newArray.add(i);
             }
         }
 
-        for (int i : arr){
-            if (i == 0){
+        for (int i : arr) {
+            if (i == 0) {
                 newArray.add(i);
             }
         }

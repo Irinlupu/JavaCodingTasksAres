@@ -1,8 +1,6 @@
 package mehmet.week8;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class UniqueIntegerSum {
 
@@ -17,12 +15,10 @@ public class UniqueIntegerSum {
     }
 
 
-
     public static int[] sumZero(int n) {
         int ans[] = new int[n];
-        for(int i=0;i<n;i++)
-        {
-            ans[i] = i*2 -n+1;
+        for (int i = 0; i < n; i++) {
+            ans[i] = i * 2 - n + 1;
         }
         return ans;
     }
