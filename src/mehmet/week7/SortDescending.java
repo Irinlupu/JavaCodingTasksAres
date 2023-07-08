@@ -11,7 +11,7 @@ public class SortDescending {
 
     public static void main(String[] args) {
 
-        int[] arr = {10,20,7, 8, 90};
+        int[] arr = {10, 20, 7, 8, 90};
         System.out.println(Arrays.toString(sortDescending(arr)));
     }
 
@@ -24,7 +24,7 @@ public class SortDescending {
                 int followingValue = arr[j];
                 int holder = 0;
 
-                if (biggestValue < followingValue){
+                if (biggestValue < followingValue) {
 
                     holder = biggestValue;
                     arr[i] = followingValue;
