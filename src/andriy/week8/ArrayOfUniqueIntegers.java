@@ -15,7 +15,6 @@ public class ArrayOfUniqueIntegers{
         result[num-1]=-sum;
         return result;
     }
-
     public static void main(String[] args) {
 
         System.out.println(Arrays.toString(sum_of_array_zero(6)));
