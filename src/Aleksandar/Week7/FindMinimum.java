@@ -9,7 +9,6 @@ public class FindMinimum {
         int[] arr = {2, 4, 7, 78, 999};
 
         int min = 2147483647;
-        int min2 = Integer.MAX_VALUE;
 
         for (int each : arr) {
             if (each < min) {
