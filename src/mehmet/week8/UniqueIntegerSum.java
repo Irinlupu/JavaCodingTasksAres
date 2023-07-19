@@ -11,7 +11,7 @@ public class UniqueIntegerSum {
     // For N = 3 one of the possible answers is [-1, 0, 1] (but there are many more correct answers).
 
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(sumZero(2)));
+        System.out.println(Arrays.toString(sumZero(5)));
     }
 
 
