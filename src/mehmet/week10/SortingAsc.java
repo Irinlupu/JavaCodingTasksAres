@@ -23,6 +23,10 @@ public class SortingAsc {
         System.out.println("Original List: " + words);
         sortAscending(words);
         System.out.println("Sorted List: " + words);
+
+        System.out.println("---------Original-----------");
+
+        System.out.println("sortAscendingInt(numbers) = " + sortAscendingInt(numbers));
     }
 
 
@@ -35,6 +39,24 @@ public class SortingAsc {
             for (int j = 0; j < list.size(); j++) {
 
                 if (list.get(i).compareTo(list.get(j)) < 0){
+                    tempValue = list.get(i);
+                    list.set(i,list.get(j));
+                    list.set(j,tempValue);
+                }
+            }
+        }
+
+        return list;
+    }
+
+    public static List<Integer> sortAscendingInt(List<Integer> list){
+
+        int tempValue;
+        for (int i = 0; i < list.size(); i++) {
+
+            for (int j = 0; j < list.size(); j++) {
+
+                if (list.get(i) < list.get(j)){
                     tempValue = list.get(i);
                     list.set(i,list.get(j));
                     list.set(j,tempValue);

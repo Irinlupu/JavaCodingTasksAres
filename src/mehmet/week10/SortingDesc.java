@@ -19,6 +19,10 @@ public class SortingDesc {
         System.out.println("Original List: " + words);
         sortDescending(words);
         System.out.println("Sorted List: " + words);
+
+        System.out.println("---------Original-----------");
+
+        System.out.println("sortAscendingInt(numbers) = " + sortDescendingInt(numbers));
     }
 
 
@@ -40,4 +44,23 @@ public class SortingDesc {
 
         return list;
     }
+
+    public static List<Integer> sortDescendingInt(List<Integer> list){
+
+        int tempValue;
+        for (int i = 0; i < list.size(); i++) {
+
+            for (int j = 0; j < list.size(); j++) {
+
+                if (list.get(i) > list.get(j)){
+                    tempValue = list.get(i);
+                    list.set(i,list.get(j));
+                    list.set(j,tempValue);
+                }
+            }
+        }
+
+        return list;
+    }
+
 }
