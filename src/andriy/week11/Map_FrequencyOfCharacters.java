@@ -11,13 +11,13 @@ public class Map_FrequencyOfCharacters {
 
     }
 
-    public static Map<Character, Integer> frequencyOfCharsInTheStr(String str) {
-        Map<Character, Integer> frequencyOfTheChars = new LinkedHashMap<>();
+    public static Map<String, Integer> frequencyOfCharsInTheStr(String str) {
+        Map<String, Integer> frequencyOfTheChars = new HashMap<>();
 
-        for (String each: str.split("")) {
-
-            int frequency = Collections.frequency(Arrays.asList(str.split("")), each);
-            frequencyOfTheChars.put(each.charAt(0),frequency);
+        String[] strArr =  str.split("");
+        for (String each: strArr) {
+            int frequency = Collections.frequency(Arrays.asList(strArr),each);
+            frequencyOfTheChars.put(each,frequency);
         }
         return frequencyOfTheChars;
     }
