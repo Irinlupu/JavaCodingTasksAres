@@ -26,6 +26,7 @@ public class MapSortByValue {
         List<Map.Entry<String, Integer>> list = new ArrayList<>(map.entrySet());
 
         list.sort(Map.Entry.comparingByValue());
+       // list.sort(Map.Entry.comparingByKey());
 
         map = new LinkedHashMap<>();
 
