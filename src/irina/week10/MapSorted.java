@@ -27,8 +27,6 @@ public class MapSorted {
             map.put(eachEntry.getKey(), eachEntry.getValue());
         }
 
-
-
         return map;
     }
 
