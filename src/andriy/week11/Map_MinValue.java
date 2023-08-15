@@ -14,7 +14,7 @@ public class Map_MinValue {
         map.put("Natalia",160000);
         map.put("Alex",140000);
         map.put("Laila",210000);
-        map.put("Andriy",130000);
+        map.put("Andriy",120000);
         map.put("Syfyan",210000);
 
         System.out.println(map);
