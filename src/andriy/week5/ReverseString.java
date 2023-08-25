@@ -10,7 +10,7 @@ public class ReverseString {
         System.out.println("Enter your word:");
         String str = input.nextLine();
         input.close();
-        System.out.println(reverseString(str));
+        System.out.println(reverseString1(str));
     }
 
     public static String reverseString(String str) {
@@ -20,6 +20,15 @@ public class ReverseString {
             reverseStr.append(str.charAt(i));
         }
         return reverseStr.toString();
+    }
+
+
+    public static String reverseString1(String str) {
+        String reverse="";
+        for (int i = str.length() - 1; i >= 0; i--) {
+            reverse+=str.charAt(i);
+        }
+        return reverse;
     }
 }
 /*
