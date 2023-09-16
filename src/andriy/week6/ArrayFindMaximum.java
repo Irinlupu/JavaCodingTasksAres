@@ -7,7 +7,7 @@ public class ArrayFindMaximum {
     public static int maxNumberOfArray(int[] array){
 
         int maxNumber = array[0];
-        //int maxNum = Integer.MIN_VALUE;
+       // int maxNum = Integer.MIN_VALUE;
         for (int i = 0; i < array.length; i++) {
            if (array[i]>maxNumber){
                maxNumber=array[i];
