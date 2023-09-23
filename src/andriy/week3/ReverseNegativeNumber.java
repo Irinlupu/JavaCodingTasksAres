@@ -6,9 +6,11 @@ public class ReverseNegativeNumber {
 
     public static int reverseNegNumber(int num) {
 
-        String strNum = String.valueOf(num);
-        String minus = strNum.substring(0, 1);
-        String rest = strNum.substring(1);
+       // String strNum = String.valueOf(num);
+
+        String strNum2 = Integer.toString(num);
+        String minus = strNum2.substring(0, 1);
+        String rest = strNum2.substring(1);
         String reverse = "";
 
         for (int i = rest.length() - 1; i >= 0; i--) {
